@@ -16,6 +16,8 @@ const HeroBanner = () => {
       <Typography
         fontWeight="700"
         sx={{ fontSize: { lg: "44px", xs: "40px" } }}
+        mb="23px"
+        mt="30px"
       >
         Helping Women on their <br /> Fitness and Wellness Journey
       </Typography>
@@ -25,11 +27,15 @@ const HeroBanner = () => {
       <Button variant="contained" color="error" href="#exercises">
         Explore Exercises
       </Button>
-      <img
-        src={HeroBannerImage}
-        alt="hero-banner"
-        className="hero-banner-img"
-      />
+      <Typography
+        fontWeight="600"
+        color="#1BB2AD"
+        sx={{ opacity: 0.1, display: { lg: "block", xs: "none" } }}
+        fontSize="200px"
+      >
+        Wellness
+      </Typography>
+      <img src={HeroBannerImage} alt="banner" className="hero-banner-img" />
     </Box>
   );
 };
